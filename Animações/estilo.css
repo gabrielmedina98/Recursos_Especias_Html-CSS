@@ -1,0 +1,99 @@
+/* Animações */
+
+@keyframes animacaoCSS {
+
+    /* animação começa em ponto e termina em outro, existe outra formas para começar.
+     */
+    from{
+        left: 0px;
+    }
+
+    to{
+        left: 300px;
+    } 
+
+/* Animação em porcentagem quando ela começa 0% e você vai definindo a porcentagem de acontecimento conform exemplo abaixo: */
+
+/* 0% {background-color: red;}
+25% {background-color: yellow;}
+50% {background-color: blue;}
+100%{background-color: gray;} */
+
+
+/* Nesse tipo de animação o box vai se movimentar conforme porcentagem definida do seu ponto incial até o final, lembrando que é necessário informa o position relative na div do elemento */
+/* 0%{background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:200px; top:0px;}
+50%  {background-color:blue; left:200px; top:200px;}
+75%  {background-color:green; left:0px; top:200px;}
+100% {background-color:gray; left:0px; top:0px;}
+  */
+
+
+}
+
+/* #caixa{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative; */
+   
+
+
+   /*  animation-name: animacaoCSS ; */
+    /* animation-duration: 4s; */
+    /* animation-delay: 2s; */
+   /*  animation-iteration-count: 3; */ /* numero de vezes que animação será executada, atributos possíveis (ifinite) */
+    /* animation-direction:normal; */ /*
+    reverse- A animação é reproduzida na direção inversa (para trás)
+    alternate - A animação é reproduzida primeiro para frente e depois para trás
+    alternate-reverse- A animação é reproduzida primeiro para trás e depois para a frente */
+
+
+    /* Animação de velocidade */
+    
+    #div1{
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: animacaoCSS 5s infinite;
+        animation-timing-function: linear; /* linear- Especifica uma animação com a mesma velocidade do início ao fim */
+    }
+    #div2{
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: animacaoCSS 5s infinite;
+        animation-timing-function: ease;
+    }
+    #div3{
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: animacaoCSS 5s infinite;
+        animation-timing-function: ease-in; /* ease-in- Especifica uma animação com início lento */
+    }
+    #div4{
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: animacaoCSS 5s infinite;
+        animation-timing-function: ease-out; /* ease-out- Especifica uma animação com final lento */
+    }
+    #div5{
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: animacaoCSS 5s infinite;
+        animation-timing-function: ease-in-out; /* ease-in-out- Especifica uma animação com início e fim lentos */
+    }

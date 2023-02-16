@@ -1,0 +1,36 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow:20px 20px 10px 10px black; /* Aplica a sombra de dentro pra fora */
+    box-shadow: inset 2em 2em 2em  gold; /* Aplica a sombra de fora pra dentro */
+    /* box-shadow aplica em div - o spreed 4° valor e para aumentar o tamnho da sombra  */
+}
+
+#caixa2{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+
+
+    /* box-shadow: 5px 10px  20px inset red; Adicione a palavra-chave inserida: */
+    
+    /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */ /* varias camadas de sombras */
+
+    /* box-shadow:20px 20px 10px 10px black; */ /* Aplica a sombra de dentro pra fora */
+
+    /* box-shadow: inset 2em 2em 2em  gold; */ /* Aplica a sombra de fora pra dentro */
+    
+    /* box-shadow aplica em div - o spreed 4° valor e para aumentar o tamnho da sombra  */
+}
+
+#caixa h1{
+   color: white;
+   /* text-shadow: 50px 0px 2px black;  /* o terceiro valor define o fuco da sombra mais borrado ou não. */
+
+   text-shadow: 2px 2px 2px  #FF0000, 2px 2px 5px #0000FF; /* Sombra de texto com um brilho neon vermelho e azul: */
+   
+}
