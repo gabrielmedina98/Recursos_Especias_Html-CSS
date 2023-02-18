@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas Tag de input do Html 5</title>
+</head>
+<body>
+    <form action="#"> 
+        <!-- nome -->
+        <label for="nome"> Nome </label>
+        <input type="text" id="nome" required >
+        <br><br>
+
+<!-- email -->
+        <label for="e-mail"> e-mail </label>
+        <input type="email" id="email" required autofocus> <!-- type-email propriedade para sociliatar o e-mail do usuário. -->
+
+        <!-- required : caso eu pressione o botão enviar ele solicita ao usuário que preencha o campo que estiver que com o required -->
+
+        <!-- autofocus o campo que o usuário deve preencher primeiro ficara selecionado. -->
+        <br><br>
+<!-- numero -->
+<label for="numero"> number </label>
+<input type="number" id="email" required min="1" max="10" step="5" >
+<!-- tem a opção de step onde vai pulando de 5 em  -->
+<!-- campo so aceitara numeros -->
+<br><br>
+
+<!-- Url -->
+<label for="url"> url </label>
+<input type="url" id="url" required placeholder="ex:http://www..." >
+<!-- placehonder e o que fica escrito dentro da caixa para o usuario veja -->
+<!-- e necessário colocar o http antes do www
+ -->
+ br <br><br>
+
+ <!-- search -->
+<label for="pesquisa"> search </label>
+<input type="search" id="search">
+<!-- o usuario digira a sua pesquisa e caso queira a apgar a pesquisa e somente clicar no x - tipo a pesquisa do goole chorme-->
+<br><br>
+
+ <!-- range -->
+ <label for="faixa"> range </label>
+ <input type="range" id="faixa" min="1" max="20" value="18" > <!-- value e valor inicial que se inicia -->
+ <!-- uma faixa para deslocar , exemplo para um zoom ou algo do tipo -->
+ <br><br>
+
+  <!-- data-->
+  <label for="data"> data </label>
+  <input type="date" id="data" value="18" > <!-- value e valor inicial que se inicia -->\
+
+  <br><br>
+
+   <!-- color -->
+ <label for="cor"> color </label>
+ <input type="color" id="cor"> 
+ <!-- esse input e interessante pois ele pode alterar fundo do perfil , fotos entre outros tipos de edições -->
+ <br><br>
+ 
+
+
+ <input type="submit" name="nome" value="Enviar">
+    </form>
+</body>
+</html>
