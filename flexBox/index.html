@@ -1,30 +1,95 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FlexBox</title>
-        <style>
-            #conteudo{
-                background-color: #dcdcdc;
-                height: 400px;
-            }
-            .item{
-                background: white;
-                border: 1px solid gray;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>FlexBox</h1>
-        <div id="conteudo">
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-        </div>
-        
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      #conteudo {
+        background-color: #dcdcdc;
+        height: 600px;
+        display: flex;
+
+        /* row|row-reverse |column | column-reverse */
+
+        /* flex-direction: row; */
+
+        /* flex-wrap definimos quebra de layout  
+                no-wrap | wrap| wrap-reverse|
+                */
+        /* flex-wrap: nowrap; */
+
+        /* justify-content: space-around; */
+
+        /* justify-content: start;
+justify-content: space-between; 
+justify-content: space-around; 
+justify-content: space-evenly;
+justify-content: stretch;  */
+
+        /* strech | center | flex-start | flex-end | baseline */
+
+        /* align-items: stretch; */
+      }
+
+      .item {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        background: white;
+        border: 1px solid gray;
+
+        /* Define proporção de espaço ocupado pelo item 
+        n° 1: define que todos receberam essa propriedade
+        n° 0: define que somente um recebera a propriedade */
+        /* aumentar */
+        flex-grow: 0;
+        /* Encolher */
+        flex-shrink: 1;
+
+        /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+
+        flex-basis: auto;
+      }
+
+      .item1 {
+        /*    flex-grow: 1; */
+        /*  flex-shrink: 1; */
+      }
+
+      .item2 {
+        /*   flex-grow: 2; */
+        /*    flex-shrink: 2; */
+      }
+
+      .item3 {
+        /* flex-grow: 3;
+ */
+        /* flex-shrink: 3; */
+      }
+
+      /*  .ordem1{
+        order: 1;
+      }
+      .ordem2{
+        order: 2;
+      }
+      .ordem3{
+        order: 3;
+      }
+      .ordem4{
+        order: 4;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>FlexBox</h1>
+    <div id="conteudo">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>
